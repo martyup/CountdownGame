@@ -22,12 +22,13 @@ public class CountdownGame {
 	}
 	
 	//Here you can choose between 1-3 big numbers and the rest will be small, total of 6 numbers
+	//maybe create a list and make sure a number does not show up more than twice
 	public static void countdownNumber(){  
 		int big;
 		int[] bigNum = {100,75,50,25};
 		int[] smallNum = {10,9,8,7,6,5,4,3,2,1};
 		
-		System.out.print("How many big numbers do you want? (1-3):");
+		System.out.print("How many big numbers do you want? (1-3): ");
 	    big = tastatur.nextInt();
 	    System.out.println("You got " + big +" big numbers and "+ (6-big) + " little ones.\n");
 	    
