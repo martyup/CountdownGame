@@ -65,18 +65,18 @@ public class CountdownGame {
 	// here is an array of 9 letters either vowel or consonant
 	// least three vowels and four consonants (not implemented)
 	public static void nineLetters(){
-		String[] vowel = {"a","e","i","o","u","y","w"};
-		String[] consonant = {"b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","x","z"};
+		String[] vowel = {"a","e","i","o","u","y"};
+		String[] consonant = {"b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","z"};
 		List<String> list = new ArrayList<>();
 		char velg, v=0, c=0;
 		for(int i=0; i<9;i++){
 		System.out.print("Do you want a vowel or a consonant? (v/c):");
 		velg = tastatur.next().charAt(0);
 		if(velg == 'v'){
-			String a = vowel[generate.nextInt(10)];
+			String a = vowel[generate.nextInt(6)];
 			list.add(a);System.out.println(list);
 		}else if(velg =='c'){
-			String a = consonant[generate.nextInt(19)];
+			String a = consonant[generate.nextInt(20)];
 			list.add(a);System.out.println(list);
 		}else{
 			System.out.println("Ugyldig data");
